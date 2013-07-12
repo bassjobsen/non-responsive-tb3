@@ -836,6 +836,9 @@ pre code {
 .col-offset-11 {
   margin-left: 91.66666666666666%;
 }
+.container {
+  max-width: 940px;
+}
 table {
   max-width: 100%;
   background-color: transparent;
