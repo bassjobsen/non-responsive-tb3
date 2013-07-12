@@ -159,6 +159,7 @@ pre code{padding:0;color:inherit;white-space:pre-wrap;background-color:transpare
 .col-offset-9{margin-left:75%;}
 .col-offset-10{margin-left:83.33333333333334%;}
 .col-offset-11{margin-left:91.66666666666666%;}
+.container{max-width:940px;}
 table{max-width:100%;background-color:transparent;}
 th{text-align:left;}
 .table{width:100%;margin-bottom:20px;}.table thead>tr>th,.table tbody>tr>th,.table tfoot>tr>th,.table thead>tr>td,.table tbody>tr>td,.table tfoot>tr>td{padding:8px;line-height:1.428571429;vertical-align:top;border-top:1px solid #dddddd;}
