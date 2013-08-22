@@ -7,3 +7,5 @@ Bootstrap 3 will be mobile first. No more separate responsive CSS file. Nice, bu
 Download the none responsive css here.
 
 Use ".col-" as class prefix for all your grid rows now.
+
+Before start using this first read: http://getbootstrap.com/getting-started/#disable-responsive this solution don't reset the @grid-float-breakpoint and don't reduce filesize.
