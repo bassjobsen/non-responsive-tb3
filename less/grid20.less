@@ -1,0 +1,15 @@
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+.grid-float-breakpoint-max(@a)
+{
+   @grid-float-breakpoint-max: 0;
+}
+.grid-float-breakpoint-max(@a) when (@a>0)
+{
+   @grid-float-breakpoint-max: @a;
+}
+.grid-float-breakpoint-max((@grid-float-breakpoint - 800));
+
+.test{ width: @grid-float-breakpoint-max;}

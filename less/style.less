@@ -1,0 +1,10 @@
+@font-sizer: 10;
+.test(@fs){font-size:@fs*5px;}
+h1{.test(
+floor(@font-sizer)
+)}
+.test(@fs){font-size:@fs*10+1px;}
+h1{.test(@font-sizer)}
+h1{.test(@font-sizer)}
+@font-sizer: 20;
+.test(@fs){font-size:@fs*5-7px;}
