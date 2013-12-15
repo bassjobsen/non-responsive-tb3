@@ -2,27 +2,56 @@
 // Grid system
 // --------------------------------------------------
 
-// Set the container width, and override it for fixed navbars in media queries
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
 .container {
+  .container-fixed();
+
+  @media (min-width: @screen-sm) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
   .container-fixed();
 }
 
-// mobile first defaults
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
 .row {
   .make-row();
 }
 
+
+// Columns
+//
 // Common styles for small and large grid columns
+
 .make-grid-columns();
 
 
 // Extra small grid
 //
-// Grid classes for extra small devices like smartphones. No offset, push, or
-// pull classes are present here due to the size of the target.
-//
-// Note that `.col-12` doesn't get floated on purpose--there's no need since
-// it's full-width.
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
 
 .make-grid-columns-float();
 .make-grid(@grid-columns, width);
